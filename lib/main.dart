@@ -34,7 +34,7 @@ void main() {
       theme: ThemeData().copyWith(
         // scaffoldBackgroundColor: const Color.fromARGB(255, 187, 158, 238),
         colorScheme: kColorScheme,
-        appBarThe me: AppBarTheme().copyWith(
+        appBarTheme: AppBarTheme().copyWith(
           backgroundColor: kColorScheme.onPrimaryContainer,
           foregroundColor: kColorScheme.primaryContainer,
         ),
@@ -50,6 +50,7 @@ void main() {
         ),
       ),
       home: Expenses(),
+      themeMode: ThemeMode.system,
     ),
   );
 }
