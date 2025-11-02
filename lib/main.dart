@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fourthapp/widgets/expenses.dart';
+// import 'package:flutter/services.dart';
 
 // ColorScheme is used to set a color scheme for different widgets in entire app and .fromseed sets a scheme based on a single color for the entire app
 var kColorScheme = ColorScheme.fromSeed(
@@ -14,6 +15,11 @@ var kDarkColorScheme = ColorScheme.fromSeed(
 );
 
 void main() {
+  // WidgetsFlutterBinding.ensureInitialized(); // to ensure below orientation locking code works properly
+  // // to lock device orientation using SystemChrome provided by services.dart package
+  // SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]).then((
+  //   fn,
+  // ) {
   runApp(
     MaterialApp(
       darkTheme: ThemeData.dark().copyWith(
@@ -53,4 +59,5 @@ void main() {
       themeMode: ThemeMode.system,
     ),
   );
+  // });
 }

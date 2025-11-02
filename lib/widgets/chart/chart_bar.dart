@@ -8,7 +8,7 @@ class ChartBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isDarkMode =
-        // MediaQuery.of(context) used to get some info about the env in which app is running
+        // MediaQuery.of(context) used to get some meta info about the env in which app is running
         MediaQuery.of(context).platformBrightness == Brightness.dark;
     return Expanded(
       child: Padding(
